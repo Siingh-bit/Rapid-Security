@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rapid Security and Services — Your trusted partner in professional security guards, housekeeping staff, and facility management for residential and corporate clients.">
+    <meta name="keywords" content="security services, watchman, housekeeping, corporate security, residential security, facility management, guard services">
+    <meta name="author" content="Rapid Security and Services">
+    <title>Rapid Security & Services | Professional Security & Facility Management</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+</head>
+<body>
+
+    <!-- ==================== LOADER ==================== -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-shield">
+                <svg viewBox="0 0 100 120" width="80" height="96">
+                    <path d="M50 5 L95 25 L95 65 Q95 100 50 115 Q5 100 5 65 L5 25 Z" 
+                          fill="none" stroke="#FFD700" stroke-width="3" class="shield-path"/>
+                    <text x="50" y="65" text-anchor="middle" fill="#FFD700" font-size="24" font-weight="bold" font-family="Outfit">RS</text>
+                </svg>
+            </div>
+            <p class="loader-text">Rapid Security</p>
+        </div>
+    </div>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                <img src="images/logo.jpg" alt="Rapid Security and Services Logo">
+                <span class="logo-text">Rapid Security</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#why-us" class="nav-link">Why Us</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link cta-link">Contact Us</a></li>
+            </ul>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <img src="images/hero-bg.png" alt="" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="container hero-content">
+            <div class="hero-badge animate-on-scroll">
+                <span class="badge-dot"></span>
+                Trusted by 100+ Clients Across India
+            </div>
+
+            <h1 class="hero-title animate-on-scroll" data-delay="100">
+                Professional Security<br>
+                <span class="gradient-text">& Facility Services</span>
+            </h1>
+
+            <p class="hero-subtitle animate-on-scroll" data-delay="200">
+                Your trusted partner in comprehensive security and housekeeping solutions for
+                <span class="typing-text"></span><span class="typing-cursor">|</span>
+            </p>
+
+            <div class="hero-buttons animate-on-scroll" data-delay="300">
+                <a href="#contact" class="btn btn-primary">
+                    <span>Get Free Quote</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#services" class="btn btn-secondary">
+                    <span>Our Services</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Hero Stats Bar -->
+        <div class="hero-stats animate-on-scroll" data-delay="500">
+            <div class="stat-item">
+                <span class="stat-number" data-target="10" data-suffix="+">0</span>
+                <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="500" data-suffix="+">0</span>
+                <span class="stat-label">Trained Guards</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="100" data-suffix="+">0</span>
+                <span class="stat-label">Happy Clients</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="24" data-suffix="/7">0</span>
+                <span class="stat-label">Support Available</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content animate-on-scroll">
+                    <div class="section-header left-aligned">
+                        <span class="section-tag">About Us</span>
+                        <h2 class="section-title">Delivering <span class="highlight">Excellence</span> in Security & Facility Management</h2>
+                        <div class="section-line"></div>
+                    </div>
+
+                    <p class="about-text">
+                        <strong>Rapid Security and Services</strong> is a leading provider of professional manpower solutions, 
+                        specializing in trained security guards, housekeeping staff, and facility management services. 
+                        With over a decade of experience, we serve both residential complexes and corporate establishments 
+                        with unwavering commitment to safety and excellence.
+                    </p>
+                    <p class="about-text">
+                        Our team of highly trained professionals undergoes rigorous background checks, regular training programs 
+                        including fire safety, first aid, and emergency response protocols. We pride ourselves on delivering 
+                        reliable, disciplined, and courteous service that exceeds client expectations.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                            <div>
+                                <h4>Licensed & Verified</h4>
+                                <p>All staff background-verified and licensed</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            </div>
+                            <div>
+                                <h4>24/7 Availability</h4>
+                                <p>Round-the-clock service and support</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <div>
+                                <h4>Trained Professionals</h4>
+                                <p>Regular fire safety & emergency training</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary about-cta">
+                        <span>Partner With Us</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+
+                <div class="about-image animate-on-scroll" data-delay="200">
+                    <div class="about-img-wrapper">
+                        <img src="images/guards-team.jpg" alt="Rapid Security trained guard team at Clover Hills">
+                        <div class="about-img-accent"></div>
+                    </div>
+                    <div class="about-experience-badge">
+                        <span class="experience-number">10+</span>
+                        <span class="experience-text">Years of<br>Trusted Service</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Our Services</span>
+                <h2 class="section-title">Comprehensive Security <span class="highlight">Solutions</span></h2>
+                <p class="section-subtitle">Tailored manpower and facility management services for every need</p>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1: Security Guards -->
+                <div class="service-card animate-on-scroll" data-delay="0">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Security Guards</h3>
+                    <p class="service-desc">Professional, uniformed security personnel trained in access control, surveillance, and emergency response for complete premises protection.</p>
+                    <ul class="service-features">
+                        <li>Uniformed & ID-verified guards</li>
+                        <li>Access control management</li>
+                        <li>Patrol & surveillance</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+
+                <!-- Service 2: Housekeeping -->
+                <div class="service-card animate-on-scroll" data-delay="100">
+                    <div class="service-icon blue">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9 22 9 12 15 12 15 22"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Housekeeping Staff</h3>
+                    <p class="service-desc">Dedicated housekeeping professionals for maintaining cleanliness, hygiene, and orderliness in residential societies and corporate spaces.</p>
+                    <ul class="service-features">
+                        <li>Daily cleaning & maintenance</li>
+                        <li>Waste management</li>
+                        <li>Common area upkeep</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+
+                <!-- Service 3: Corporate Security -->
+                <div class="service-card animate-on-scroll" data-delay="200">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Corporate Security</h3>
+                    <p class="service-desc">End-to-end security solutions for offices, IT parks, banks, and corporate campuses with strict access protocols and visitor management.</p>
+                    <ul class="service-features">
+                        <li>Visitor management systems</li>
+                        <li>CCTV monitoring support</li>
+                        <li>Executive protection</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+
+                <!-- Service 4: Residential Security -->
+                <div class="service-card animate-on-scroll" data-delay="300">
+                    <div class="service-icon blue">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <path d="M12 22s4-2 4-6V11l-4-2-4 2v5c0 4 4 6 4 6z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Residential Security</h3>
+                    <p class="service-desc">Complete security solutions for gated communities, housing societies, and residential towers with trained gate guards and patrol teams.</p>
+                    <ul class="service-features">
+                        <li>Gate & perimeter security</li>
+                        <li>Night patrol teams</li>
+                        <li>Vehicle entry management</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+
+                <!-- Service 5: Event Security -->
+                <div class="service-card animate-on-scroll" data-delay="400">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                            <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Event Security</h3>
+                    <p class="service-desc">Specialized security detail for corporate events, exhibitions, weddings, and public gatherings with crowd management expertise.</p>
+                    <ul class="service-features">
+                        <li>Crowd management</li>
+                        <li>VIP protection</li>
+                        <li>Entry/exit control</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+
+                <!-- Service 6: Fire Safety Training -->
+                <div class="service-card animate-on-scroll" data-delay="500">
+                    <div class="service-icon blue">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2c0 4-4 6-4 10a4 4 0 0 0 8 0c0-4-4-6-4-10z"/>
+                            <path d="M12 18a2 2 0 0 1-2-2c0-2 2-3 2-5 0 2 2 3 2 5a2 2 0 0 1-2 2z"/>
+                            <line x1="12" y1="22" x2="12" y2="18"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Fire Safety Training</h3>
+                    <p class="service-desc">Comprehensive fire safety drills, extinguisher training, and emergency evacuation protocols for all staff and building occupants.</p>
+                    <ul class="service-features">
+                        <li>Fire extinguisher training</li>
+                        <li>Evacuation drills</li>
+                        <li>Safety compliance audits</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== GALLERY ==================== -->
+    <section id="gallery" class="section-padding">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Our Work</span>
+                <h2 class="section-title">See Our <span class="highlight">Team</span> in Action</h2>
+                <p class="section-subtitle">Professional guards deployed across residential and corporate sites</p>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item large animate-on-scroll" data-delay="0">
+                    <img src="images/guards-training.jpg" alt="Security guards undergoing fire safety training">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Fire Safety Training</h4>
+                            <p>Regular drills for emergency preparedness</p>
+                        </div>
+                        <div class="gallery-zoom">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item animate-on-scroll" data-delay="100">
+                    <img src="images/guards-lineup.jpg" alt="Guards standing in formation during briefing">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Morning Briefing</h4>
+                            <p>Daily assembly and duty allocation</p>
+                        </div>
+                        <div class="gallery-zoom">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item animate-on-scroll" data-delay="200">
+                    <img src="images/guards-team.jpg" alt="Rapid Security guard team at Clover Hills">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Residential Deployment</h4>
+                            <p>Clover Hills residential complex</p>
+                        </div>
+                        <div class="gallery-zoom">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item wide animate-on-scroll" data-delay="300">
+                    <img src="images/guard-gate.jpg" alt="Security guard managing gate entry at residential complex">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Gate Security</h4>
+                            <p>Access control at residential entrance</p>
+                        </div>
+                        <div class="gallery-zoom">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous image">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="Gallery image" id="lightboxImg">
+        </div>
+        <button class="lightbox-next" aria-label="Next image">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+    </div>
+
+    <!-- ==================== WHY CHOOSE US ==================== -->
+    <section id="why-us" class="section-padding">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Why Choose Us</span>
+                <h2 class="section-title">The <span class="highlight">Rapid</span> Advantage</h2>
+                <p class="section-subtitle">What sets us apart from the competition</p>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card animate-on-scroll" data-delay="0">
+                    <div class="why-icon gold">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <div class="why-number" data-target="500" data-suffix="+">0</div>
+                    <h3 class="why-title">Trained Personnel</h3>
+                    <p class="why-desc">Over 500 rigorously trained and background-verified security professionals ready for deployment.</p>
+                </div>
+
+                <div class="why-card animate-on-scroll" data-delay="150">
+                    <div class="why-icon blue">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <div class="why-number" data-target="24" data-suffix="/7">0</div>
+                    <h3 class="why-title">Always Available</h3>
+                    <p class="why-desc">Round-the-clock monitoring, support, and rapid replacement guarantee. We never leave you unprotected.</p>
+                </div>
+
+                <div class="why-card animate-on-scroll" data-delay="300">
+                    <div class="why-icon gold">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                    </div>
+                    <div class="why-number" data-target="100" data-suffix="%">0</div>
+                    <h3 class="why-title">Client Satisfaction</h3>
+                    <p class="why-desc">100% client retention rate speaks to our commitment to excellence and reliable service delivery.</p>
+                </div>
+
+                <div class="why-card animate-on-scroll" data-delay="450">
+                    <div class="why-icon blue">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
+                    <div class="why-number" data-target="2" data-suffix="Hrs">0</div>
+                    <h3 class="why-title">Quick Deployment</h3>
+                    <p class="why-desc">Emergency deployment within 2 hours. Swift manpower mobilization when you need it most.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section id="testimonials" class="section-padding">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our <span class="highlight">Clients</span> Say</h2>
+                <p class="section-subtitle">Trusted by leading residential and corporate organizations</p>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="testimonial-carousel animate-on-scroll">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card active">
+                        <div class="testimonial-quote">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" opacity="0.2">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">"Rapid Security has been managing our residential complex security for 5 years. Their guards are well-trained, punctual, and extremely professional. The regular fire safety drills they conduct give our residents great peace of mind."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">RK</div>
+                            <div>
+                                <h4 class="author-name">Rajesh Kumar</h4>
+                                <p class="author-role">Chairman, Clover Hills Society</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-stars">★★★★★</div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" opacity="0.2">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">"We've been using Rapid Security for our corporate office in Pune. Their housekeeping staff and security team are outstanding. The level of discipline and professionalism is exactly what we needed for our workspace."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">PS</div>
+                            <div>
+                                <h4 class="author-name">Priya Sharma</h4>
+                                <p class="author-role">Facility Manager, TechPark Solutions</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-stars">★★★★★</div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" opacity="0.2">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">"Quick response time and exceptional guard quality. When we needed emergency security coverage for our annual event, Rapid Security deployed a trained team within hours. Highly recommend their services!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">AM</div>
+                            <div>
+                                <h4 class="author-name">Amit Mehta</h4>
+                                <p class="author-role">Director, Mehta Events Group</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-stars">★★★★★</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-dots" id="testimonialDots">
+                    <button class="dot active" data-index="0" aria-label="Testimonial 1"></button>
+                    <button class="dot" data-index="1" aria-label="Testimonial 2"></button>
+                    <button class="dot" data-index="2" aria-label="Testimonial 3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Request a <span class="highlight">Free Quote</span></h2>
+                <p class="section-subtitle">Let us know your requirements and we'll get back to you within 24 hours</p>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-card">
+                        <div class="contact-icon gold">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+91 98765 43210</p>
+                            <p>+91 98765 43211</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon blue">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>info@rapidsecurity.in</p>
+                            <p>support@rapidsecurity.in</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon gold">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>Rapid Security & Services</p>
+                            <p>Pune, Maharashtra, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon blue">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Mon - Sat: 9:00 AM - 7:00 PM</p>
+                            <p>Sunday: Emergency Only</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper animate-on-scroll" data-delay="200">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="formName" name="name" required placeholder=" ">
+                            <label for="formName">Your Name</label>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="email" id="formEmail" name="email" required placeholder=" ">
+                                <label for="formEmail">Email Address</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="formPhone" name="phone" required placeholder=" ">
+                                <label for="formPhone">Phone Number</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <select id="formService" name="service" required>
+                                <option value="" disabled selected>Select Service Required</option>
+                                <option value="security-guards">Security Guards</option>
+                                <option value="housekeeping">Housekeeping Staff</option>
+                                <option value="corporate-security">Corporate Security</option>
+                                <option value="residential-security">Residential Security</option>
+                                <option value="event-security">Event Security</option>
+                                <option value="fire-safety">Fire Safety Training</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="formMessage" name="message" rows="4" required placeholder=" "></textarea>
+                            <label for="formMessage">Your Message</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                        </button>
+                    </form>
+
+                    <div class="form-success" id="formSuccess">
+                        <div class="success-icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                        </div>
+                        <h3>Message Sent Successfully!</h3>
+                        <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="images/logo.jpg" alt="Rapid Security Logo">
+                        <span>Rapid Security</span>
+                    </div>
+                    <p class="footer-desc">Your trusted partner in professional security and facility management solutions. Protecting what matters most since 2014.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Security Guards</a></li>
+                        <li><a href="#services">Housekeeping</a></li>
+                        <li><a href="#services">Corporate Security</a></li>
+                        <li><a href="#services">Residential Security</a></li>
+                        <li><a href="#services">Event Security</a></li>
+                        <li><a href="#services">Fire Safety Training</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Pune, Maharashtra, India</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <span>+91 98765 43210</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <span>info@rapidsecurity.in</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rapid Security and Services. All Rights Reserved.</p>
+                <p>Designed with ❤️ for safer communities</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== BACK TO TOP ==================== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
