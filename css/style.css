@@ -459,6 +459,10 @@ html {
 .navbar .logo img {
   height: 50px;
   width: auto;
+  background: #ffffff;
+  padding: 4px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   transition: transform var(--transition-base);
 }
 
@@ -1857,6 +1861,10 @@ html {
 .footer .logo img {
   height: 50px;
   width: auto;
+  background: #ffffff;
+  padding: 4px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   margin-bottom: var(--sp-md);
 }
 
@@ -2232,6 +2240,15 @@ html {
   /* ── Mobile Nav ── */
   .nav-toggle {
     display: flex;
+  }
+
+  .navbar .logo img {
+    height: 42px;
+  }
+
+  #hero {
+    padding-top: calc(var(--navbar-height) + 40px);
+    padding-bottom: 40px;
   }
 
   .nav-menu {
@@ -3145,6 +3162,9 @@ html {
   height: 50px;
   width: auto;
   border-radius: 8px;
+  background: #ffffff;
+  padding: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .footer-logo span {
