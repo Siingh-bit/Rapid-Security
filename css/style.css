@@ -459,8 +459,6 @@ html {
 .navbar .logo img {
   height: 50px;
   width: auto;
-  mix-blend-mode: multiply;
-  filter: brightness(1.1);
   transition: transform var(--transition-base);
 }
 
@@ -881,10 +879,7 @@ html {
   display: block;
 }
 
-/* Logo on dark hero background */
-.hero .logo img {
-  mix-blend-mode: screen;
-}
+
 
 /* ──────────────────────────────────────────────────────────────
    8. ABOUT SECTION
@@ -1862,7 +1857,6 @@ html {
 .footer .logo img {
   height: 50px;
   width: auto;
-  mix-blend-mode: screen;
   margin-bottom: var(--sp-md);
 }
 
@@ -3150,7 +3144,6 @@ html {
 .footer-logo img {
   height: 50px;
   width: auto;
-  mix-blend-mode: screen;
   border-radius: 8px;
 }
 
