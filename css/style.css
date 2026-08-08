@@ -1606,6 +1606,11 @@ html {
     height: 42px;
   }
 
+  .navbar .logo-text {
+    font-size: 0.95rem;
+  }
+
+
   #hero {
     padding-top: calc(var(--navbar-height) + 40px);
     padding-bottom: 40px;
@@ -2410,6 +2415,11 @@ html {
   font-weight: 700;
   color: #f0f0f5;
 }
+
+.footer-logo span span {
+  color: var(--clr-gold);
+}
+
 
 .footer-desc {
   font-size: 0.875rem;
