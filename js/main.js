@@ -241,66 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ==========================================================================
-     8. TESTIMONIAL CAROUSEL
-     ========================================================================== */
-  const carousel = document.querySelector('.testimonial-carousel');
-
-  if (carousel) {
-    const slides = carousel.querySelectorAll('.testimonial-slide');
-    const dotsContainer = carousel.querySelector('.carousel-dots');
-    let currentSlide = 0;
-    let autoRotateTimer = null;
-    const AUTO_ROTATE_INTERVAL = 5000;
-
-    if (dotsContainer && slides.length > 0) {
-      slides.forEach((_, i) => {
-        const dot = document.createElement('button');
-        dot.classList.add('carousel-dot');
-        dot.setAttribute('aria-label', `Go to testimonial ${i + 1}`);
-        if (i === 0) dot.classList.add('active');
-        dot.addEventListener('click', () => goToSlide(i));
-        dotsContainer.appendChild(dot);
-      });
-    }
-
-    const dots = dotsContainer ? dotsContainer.querySelectorAll('.carousel-dot') : [];
-
-    const goToSlide = (index) => {
-      slides.forEach((slide) => slide.classList.remove('active'));
-      dots.forEach((dot) => dot.classList.remove('active'));
-
-      currentSlide = index;
-      slides[currentSlide].classList.add('active');
-      if (dots[currentSlide]) dots[currentSlide].classList.add('active');
-    };
-
-    const nextSlide = () => {
-      goToSlide((currentSlide + 1) % slides.length);
-    };
-
-    const startAutoRotate = () => {
-      stopAutoRotate();
-      autoRotateTimer = setInterval(nextSlide, AUTO_ROTATE_INTERVAL);
-    };
-
-    const stopAutoRotate = () => {
-      if (autoRotateTimer) {
-        clearInterval(autoRotateTimer);
-        autoRotateTimer = null;
-      }
-    };
-
-    if (slides.length > 0) {
-      goToSlide(0);
-      startAutoRotate();
-    }
-
-    carousel.addEventListener('mouseenter', stopAutoRotate);
-    carousel.addEventListener('mouseleave', startAutoRotate);
-  }
-
-  /* ==========================================================================
-     9. BACK TO TOP BUTTON
+     8. BACK TO TOP BUTTON
      ========================================================================== */
   const backToTop = document.querySelector('.back-to-top');
   const BACK_TO_TOP_THRESHOLD = 500;
@@ -323,7 +264,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ==========================================================================
-     10. ACTIVE NAV LINK HIGHLIGHT
+     9. ACTIVE NAV LINK HIGHLIGHT
      ========================================================================== */
   const sections = document.querySelectorAll('section[id]');
   const navLinkItems = document.querySelectorAll('.nav-links a[href^="#"]');
@@ -353,7 +294,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ==========================================================================
-     11. CONTACT FORM VALIDATION
+     10. CONTACT FORM VALIDATION
      ========================================================================== */
   const contactForm = document.querySelector('.contact-form');
 
@@ -469,27 +410,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ==========================================================================
-     12. PARALLAX EFFECT
-     ========================================================================== */
-  const heroSection = document.querySelector('.hero');
-
-  if (heroSection) {
-    const parallaxSpeed = 0.3;
-
-    const handleParallax = () => {
-      const scrolled = window.scrollY;
-      const heroHeight = heroSection.offsetHeight;
-
-      if (scrolled <= heroHeight) {
-        heroSection.style.backgroundPositionY = `${scrolled * parallaxSpeed}px`;
-      }
-    };
-
-    window.addEventListener('scroll', handleParallax, { passive: true });
-  }
-
-  /* ==========================================================================
-     13. TYPING EFFECT
+     11. TYPING EFFECT
      ========================================================================== */
   const typingElement = document.querySelector('.typing-text');
 
@@ -541,4 +462,62 @@ document.addEventListener('DOMContentLoaded', () => {
 
     type();
   }
+
+  /* ==========================================================================
+     12. TESTIMONIAL CAROUSEL SLIDER
+     ========================================================================== */
+  const testimonialTrack = document.getElementById('testimonialTrack');
+  const testimonialDotsContainer = document.getElementById('testimonialDots');
+
+  if (testimonialTrack && testimonialDotsContainer) {
+    const cards = testimonialTrack.querySelectorAll('.testimonial-card');
+    const dots = testimonialDotsContainer.querySelectorAll('.dot');
+    let currentIndex = 0;
+    let autoSlideInterval = null;
+
+    const goToSlide = (index) => {
+      currentIndex = index;
+      testimonialTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+      cards.forEach((card, idx) => {
+        card.classList.toggle('active', idx === currentIndex);
+      });
+
+      dots.forEach((dot, idx) => {
+        dot.classList.toggle('active', idx === currentIndex);
+      });
+    };
+
+    dots.forEach((dot, idx) => {
+      dot.addEventListener('click', () => {
+        goToSlide(idx);
+        resetAutoSlide();
+      });
+    });
+
+    const startAutoSlide = () => {
+      autoSlideInterval = setInterval(() => {
+        const nextIndex = (currentIndex + 1) % cards.length;
+        goToSlide(nextIndex);
+      }, 5000);
+    };
+
+    const resetAutoSlide = () => {
+      if (autoSlideInterval) clearInterval(autoSlideInterval);
+      startAutoSlide();
+    };
+
+    startAutoSlide();
+
+    const carouselContainer = document.querySelector('.testimonial-carousel');
+    if (carouselContainer) {
+      carouselContainer.addEventListener('mouseenter', () => {
+        if (autoSlideInterval) clearInterval(autoSlideInterval);
+      });
+      carouselContainer.addEventListener('mouseleave', () => {
+        startAutoSlide();
+      });
+    }
+  }
 });
+
