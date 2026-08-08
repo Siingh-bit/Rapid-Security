@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(step);
   };
 
-  const statNumbers = document.querySelectorAll('.stat-number');
+  const statNumbers = document.querySelectorAll('.stat-number, .why-number');
 
   if (statNumbers.length > 0) {
     const statObserver = new IntersectionObserver(
