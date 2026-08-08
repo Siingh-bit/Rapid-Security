@@ -6,13 +6,23 @@ document.addEventListener('DOMContentLoaded', () => {
      ========================================================================== */
   const loader = document.querySelector('.loader');
   if (loader) {
-    setTimeout(() => {
+    let isHidden = false;
+    const hideLoader = () => {
+      if (isHidden) return;
+      isHidden = true;
       loader.style.opacity = '0';
-      loader.style.transition = 'opacity 0.6s ease';
+      loader.style.transition = 'opacity 0.4s ease';
       loader.addEventListener('transitionend', () => {
         loader.style.display = 'none';
       }, { once: true });
-    }, 1500);
+    };
+
+    if (document.readyState === 'complete') {
+      setTimeout(hideLoader, 150);
+    } else {
+      window.addEventListener('load', () => setTimeout(hideLoader, 150), { once: true });
+      setTimeout(hideLoader, 1200);
+    }
   }
 
   /* ==========================================================================
