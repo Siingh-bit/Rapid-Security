@@ -1280,7 +1280,23 @@ html {
   color: var(--clr-text-white);
   font-size: var(--fs-base);
   transition: all var(--transition-base);
+  color-scheme: dark;
 }
+
+.form-group select {
+  cursor: pointer;
+}
+
+.form-group select option {
+  background-color: #111836;
+  color: #f0f0f5;
+  padding: 12px;
+}
+
+.form-group select option:disabled {
+  color: #a0a5c0;
+}
+
 
 .form-group textarea {
   resize: vertical;
